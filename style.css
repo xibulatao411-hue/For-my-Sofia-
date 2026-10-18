@@ -1,0 +1,123 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-family: Georgia, serif;
+  color: #e8f5e9;
+  background: linear-gradient(
+    135deg, #061b11, #14532d, #092719
+  );
+}
+
+.card {
+  width: 100%;
+  max-width: 480px;
+  padding: 30px 24px;
+  text-align: center;
+  border: 1px solid #7eb58b;
+  border-radius: 24px;
+  background: #0b2c1d;
+  box-shadow: 0 0 35px #0005;
+}
+
+h1 {
+  color: #c5e8c9;
+  font-size: 30px;
+}
+
+p {
+  line-height: 1.8;
+}
+
+button {
+  padding: 13px 25px;
+  border: 1px solid #a5d6a7;
+  border-radius: 30px;
+  background: #245c39;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #34784b;
+}
+
+input {
+  width: 100%;
+  padding: 14px;
+  margin: 15px 0;
+  border: 1px solid #a5d6a7;
+  border-radius: 30px;
+  background: #061b11;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.heart {
+  font-size: 38px;
+  color: #a5d6a7;
+  animation: heartbeat 1s infinite alternate;
+}
+
+@keyframes heartbeat {
+  to { transform: scale(1.15); }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  min-height: 100px;
+}
+
+#no {
+  position: relative;
+}
+
+.letter {
+  margin-top: 25px;
+  padding: 22px;
+  border-radius: 12px;
+  background: #e8f0df;
+  color: #163d28;
+  text-align: left;
+}
+
+.letter h2 {
+  text-align: center;
+}
+
+.letter p {
+  line-height: 1.85;
+}
+
+.footer {
+  color: #a5d6a7;
+  font-size: 12px;
+  margin-top: 25px;
+}
+
+@media (max-width: 360px) {
+  .buttons {
+    gap: 10px;
+  }
+
+  button {
+    padding: 12px 18px;
+  }
+}
